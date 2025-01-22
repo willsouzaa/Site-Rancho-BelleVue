@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubra o charme do Rancho Belle Vue, um chalé acolhedor nas montanhas. Reserve já sua estadia!">
+    <title>Rancho Belle Vue</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #4b3b2b;">
+        <div class="container">
+            <a class="navbar-brand" href="#">Rancho Belle Vue</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">História</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery">Galeria</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="text-white text-center py-5">
+        <div class="container">
+            <h1 class="display-4">Bem-vindo ao Rancho Belle Vue</h1>
+            <p class="lead">Descubra a tranquilidade das montanhas em um chalé aconchegante.</p>
+            <a href="https://wa.me/SEUNUMERO" target="_blank" class="btn btn-success btn-lg">Reserve pelo WhatsApp</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5" style="background-color: #f0e9e2;">
+        <div class="container">
+            <h2 class="text-center mb-4" style="color: #4b3b2b;">Nossa História</h2>
+            <p class="text-center" style="color: #4b3b2b;">O Rancho Belle Vue foi criado para proporcionar uma experiência única nas montanhas, oferecendo conforto, privacidade e uma vista de tirar o fôlego. Venha conhecer e se encantar!</p>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-5" style="background-color: #e9f5e9;">
+        <div class="container">
+            <h2 class="text-center mb-4" style="color: #4b3b2b;">Galeria de Fotos</h2>
+            <div id="galleryCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="imagem/chalé interior.jpg" class="d-block w-100" alt="Interior do chalé">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagem/chalé exterior.jpg" class="d-block w-100" alt="Vista exterior">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagem/chalé paisagem.jpg" class="d-block w-100" alt="Paisagem ao redor">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Próximo</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5" style="background-color: #f0e9e2;">
+        <div class="container">
+            <h2 class="text-center mb-4" style="color: #4b3b2b;">Contato</h2>
+            <p class="text-center" style="color: #4b3b2b;">Estamos à disposição para dúvidas e reservas. Entre em contato pelo WhatsApp ou visite nossas redes sociais!</p>
+            <div class="text-center">
+                <a href="https://wa.me/SEUNUMERO" target="_blank" class="btn btn-success">Fale Conosco no WhatsApp</a>
+            </div>
+        </div>
+    </section>
+    <!-- Depoimentos e Avaliações -->
+<section id="testimonials" class="py-5" style="background-color: #f8f9fa;">
+    <div class="container">
+        <h2 class="text-center mb-4" style="color: #4b3b2b;">O que nossos hóspedes dizem</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title" style="color: #4b3b2b;">Maria Silva</h5>
+                        <p class="card-text">"O Rancho Belle Vue foi o lugar perfeito para nossa escapada. A vista é incrível e o chalé é super aconchegante! Recomendo a todos!"</p>
+                        <div class="d-flex justify-content-between">
+                            <span class="text-warning">&#9733;&#9733;&#9733;&#9733;&#9733;</span> <!-- Estrelas de avaliação -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title" style="color: #4b3b2b;">João Pereira</h5>
+                        <p class="card-text">"Passamos um fim de semana maravilhoso no chalé. A tranquilidade e o contato com a natureza são incomparáveis. Voltaríamos com certeza!"</p>
+                        <div class="d-flex justify-content-between">
+                            <span class="text-warning">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title" style="color: #4b3b2b;">Ana Costa</h5>
+                        <p class="card-text">"Amei o chalé! Excelente para relaxar e desconectar. As acomodações são de altíssima qualidade, e a equipe foi super atenciosa!"</p>
+                        <div class="d-flex justify-content-between">
+                            <span class="text-warning">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Mapa de Localização -->
+<section id="location" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4" style="color: #4b3b2b;">Localização</h2>
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7634.564023828866!2d-48.80722556605521!3d-27.645417890972627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9520b77ecec15cd5%3A0x332907d69b83fd0!2sRancho%20Belle%20Vue!5e0!3m2!1spt-BR!2sbr!4v1737508574277!5m2!1spt-BR!2sbr" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="text-white text-center py-3" style="background-color: #4b3b2b;">
+        <p>&copy; 2025 Rancho Belle Vue. Todos os direitos reservados.</p>
+        <p>Siga-nos no Instagram: <a href="https://instagram.com/ranchobellevue" class="text-white">@ranchobellevue</a></p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
