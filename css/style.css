@@ -5,42 +5,57 @@ body {
     background-color: #fff;
     margin: 0;
     padding: 0;
-    padding-top: 60px; /* Menor que antes, para compensar a navbar ainda mais compacta */
+    padding-top: 60px;
+    /* Menor que antes, para compensar a navbar ainda mais compacta */
 }
 
 /* Navbar */
 .navbar {
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Sombras mais sutis e modernas */
-    padding: 0.5rem 1rem; /* Padding ajustado para dar mais espaço ao conteúdo */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    /* Sombras mais sutis e modernas */
+    padding: 0.5rem 1rem;
+    /* Padding ajustado para dar mais espaço ao conteúdo */
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: auto; /* Ajuste automático de altura */
+    height: auto;
+    /* Ajuste automático de altura */
     z-index: 9999;
-    background-color: rgba(156, 155, 127, 0.85); /* Marrom esverdeado translúcido */
-    backdrop-filter: blur(10px); /* Efeito de desfoque no fundo */
-    transition: background-color 0.3s ease; /* Transição suave de cor */
+    background-color: rgba(156, 155, 127, 0.85);
+    /* Marrom esverdeado translúcido */
+    backdrop-filter: blur(10px);
+    /* Efeito de desfoque no fundo */
+    transition: background-color 0.3s ease;
+    /* Transição suave de cor */
 }
 
 /* Efeito de hover para navbar */
 .navbar:hover {
-    background-color: rgba(156, 155, 127, 1); /* Efeito de escurecimento ao passar o mouse */
+    background-color: rgba(156, 155, 127, 1);
+    /* Efeito de escurecimento ao passar o mouse */
 }
 
 /* Logo */
 .navbar-brand img {
-    height: 80px; /* Tamanho ajustado da logo */
-    background-color: #ffffff; /* Fundo branco na logo */
-    padding: 10px; /* Espaço aumentado ao redor da logo */
-    border-radius: 50%; /* Bordas arredondadas para um efeito moderno */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Efeito de sombra para dar destaque */
+    height: 80px;
+    /* Tamanho ajustado da logo */
+    background-color: #ffffff;
+    /* Fundo branco na logo */
+    padding: 10px;
+    /* Espaço aumentado ao redor da logo */
+    border-radius: 50%;
+    /* Bordas arredondadas para um efeito moderno */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    /* Efeito de sombra para dar destaque */
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
 }
 
 .navbar-brand img:hover {
-    transform: scale(1.1); /* Aumento da logo ao passar o mouse */
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5); /* Efeito de brilho ao passar o mouse */
+    transform: scale(1.1);
+    /* Aumento da logo ao passar o mouse */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+    /* Efeito de brilho ao passar o mouse */
 }
 
 /* Botão WhatsApp */
@@ -48,7 +63,8 @@ body {
     border-radius: 30px;
     padding: 0.6rem 1.2rem;
     font-weight: 600;
-    background-color: rgba(0, 128, 0, 0.1); /* Fundo esverdeado leve */
+    background-color: rgba(0, 128, 0, 0.1);
+    /* Fundo esverdeado leve */
     border: 2px solid #4CAF50;
     color: #4CAF50;
     transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
@@ -59,43 +75,54 @@ body {
     border-radius: 30px;
     padding: 0.6rem 1.2rem;
     font-weight: 600;
-    background-color: #FF5A5F; /* Cor oficial do Airbnb */
+    background-color: #FF5A5F;
+    /* Cor oficial do Airbnb */
     border: 2px solid #FF5A5F;
     color: white;
     transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* Efeito hover para o botão de WhatsApp e Airbnb */
-.navbar .btn-whatsapp:hover, .navbar .btn-airbnb:hover {
+.navbar .btn-whatsapp:hover,
+.navbar .btn-airbnb:hover {
     background-color: #4CAF50;
     color: #fff;
     transform: scale(1.05);
-    box-shadow: 0 4px 10px rgba(0, 128, 0, 0.2); /* Efeito de sombra mais forte ao passar o mouse */
+    box-shadow: 0 4px 10px rgba(0, 128, 0, 0.2);
+    /* Efeito de sombra mais forte ao passar o mouse */
 }
 
 .navbar .btn-airbnb:hover {
-    background-color: #FF3B3F; /* Cor mais forte para o botão do Airbnb */
+    background-color: #FF3B3F;
+    /* Cor mais forte para o botão do Airbnb */
 }
 
 /* Ajuste para telas pequenas */
 @media (max-width: 768px) {
     .navbar-brand img {
-        height: 60px; /* Reduz o tamanho da logo */
+        height: 60px;
+        /* Reduz o tamanho da logo */
     }
 
-    .navbar .btn-whatsapp, .navbar .btn-airbnb {
-        font-size: 0.8rem; /* Diminui o tamanho dos botões */
+    .navbar .btn-whatsapp,
+    .navbar .btn-airbnb {
+        font-size: 0.8rem;
+        /* Diminui o tamanho dos botões */
         padding: 0.4rem 0.8rem;
     }
 }
+
 /* Ajuste para telas pequenas */
 @media (max-width: 500px) {
     .navbar-brand img {
-        height: 60px; /* Reduz o tamanho da logo */
+        height: 60px;
+        /* Reduz o tamanho da logo */
     }
 
-    .navbar .btn-whatsapp, .navbar .btn-airbnb {
-        font-size: 0.6rem; /* Diminui o tamanho dos botões */
+    .navbar .btn-whatsapp,
+    .navbar .btn-airbnb {
+        font-size: 0.6rem;
+        /* Diminui o tamanho dos botões */
         padding: 0.2rem 0.6rem;
     }
 }
@@ -103,39 +130,50 @@ body {
 /* Estilo do Carousel */
 .carousel-item img {
     width: 100%;
-    height: 100%; /* Ajuste automático conforme a altura do carrossel */
-    object-fit: cover; /* Faz com que a imagem cubra a área do carrossel sem distorção */
-    background-color: #000; /* Adiciona fundo preto caso existam espaços vazios */
+    height: 100%;
+    /* Ajuste automático conforme a altura do carrossel */
+    object-fit: cover;
+    /* Faz com que a imagem cubra a área do carrossel sem distorção */
+    background-color: #000;
+    /* Adiciona fundo preto caso existam espaços vazios */
 }
 
 
 /* Tamanho mínimo do Carousel */
 .carousel {
-    min-height: 800px; /* Garante que o container do carousel tenha pelo menos 800px de altura */
+    min-height: 800px;
+    /* Garante que o container do carousel tenha pelo menos 800px de altura */
 }
 
 .carousel-item img {
     width: 100%;
-    height: 800px; /* Ajuste conforme necessário */
+    height: 800px;
+    /* Ajuste conforme necessário */
     object-fit: cover;
 }
+
 /* Estilo do Carousel */
 .carousel-item img {
     width: 100%;
-    height: 90vh; /* Ocupa toda a altura da tela */
-    object-fit: cover; /* Faz com que a imagem cubra toda a área sem distorcer */
-    background-color: #000; /* Fundo preto para evitar espaços vazios */
+    height: 90vh;
+    /* Ocupa toda a altura da tela */
+    object-fit: cover;
+    /* Faz com que a imagem cubra toda a área sem distorcer */
+    background-color: #000;
+    /* Fundo preto para evitar espaços vazios */
 }
 
 /* Garante um tamanho mínimo para o carrossel */
 .carousel {
-    min-height: 400px; /* Altura mínima para telas pequenas */
+    min-height: 400px;
+    /* Altura mínima para telas pequenas */
 }
 
 /* Ajuste para telas menores */
 @media (max-width: 768px) {
     .carousel-item img {
-        height: 60vh; /* Reduz a altura em telas menores */
+        height: 60vh;
+        /* Reduz a altura em telas menores */
     }
 }
 
@@ -178,10 +216,10 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-#precos .card-img-top {
-    border-radius: 10px 10px 0 0;
-    max-height: 200px;
-    object-fit: cover;
+#precos .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 #precos .btn {
@@ -203,6 +241,16 @@ body {
     color: #4b3b2b;
     font-weight: 600;
 }
+
+#precos .list-unstyled li {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+#precos .card-body p {
+    margin-bottom: 15px;
+}
+
 
 #faq .accordion-button {
     background-color: #4b3b2b;
@@ -226,16 +274,22 @@ body {
     font-weight: 600;
 }
 
-/* Footer */
 footer {
     background-color: #4b3b2b;
-    padding: 2rem 0;
-    text-align: center;
+    color: white;
 }
 
-footer p {
-    font-size: 1rem;
-    color: #fff;
+footer .btn {
+    background-color: #e1c16e;
+    color: #4b3b2b;
+    font-weight: 600;
+    border-radius: 25px;
+    padding: 10px 20px;
+}
+
+footer .btn:hover {
+    background-color: #d0a04b;
+    color: white;
 }
 
 footer a {
@@ -245,4 +299,22 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+footer hr {
+    border-top: 1px solid #e1c16e;
+}
+
+footer h5 {
+    font-weight: 600;
+    color: #e1c16e;
+}
+
+footer ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+footer ul li {
+    color: #dcdcdc;
 }
