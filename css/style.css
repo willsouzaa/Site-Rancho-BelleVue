@@ -77,11 +77,26 @@ body {
     background-color: #FF3B3F; /* Cor mais forte para o botão do Airbnb */
 }
 
-/* Ajuste de tamanho para telas pequenas */
+/* Ajuste para telas pequenas */
 @media (max-width: 768px) {
+    .navbar-brand img {
+        height: 60px; /* Reduz o tamanho da logo */
+    }
+
     .navbar .btn-whatsapp, .navbar .btn-airbnb {
-        padding: 0.4rem 1rem;
-        font-size: 0.9rem;
+        font-size: 0.8rem; /* Diminui o tamanho dos botões */
+        padding: 0.4rem 0.8rem;
+    }
+}
+/* Ajuste para telas pequenas */
+@media (max-width: 500px) {
+    .navbar-brand img {
+        height: 60px; /* Reduz o tamanho da logo */
+    }
+
+    .navbar .btn-whatsapp, .navbar .btn-airbnb {
+        font-size: 0.6rem; /* Diminui o tamanho dos botões */
+        padding: 0.2rem 0.6rem;
     }
 }
 
