@@ -44,7 +44,7 @@ body {
 }
 
 /* Botão WhatsApp */
-.navbar .btn-modern {
+.navbar .btn-whatsapp {
     border-radius: 30px;
     padding: 0.6rem 1.2rem;
     font-weight: 600;
@@ -54,26 +54,51 @@ body {
     transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.navbar .btn-modern:hover {
+/* Botão Reserva via Airbnb */
+.navbar .btn-airbnb {
+    border-radius: 30px;
+    padding: 0.6rem 1.2rem;
+    font-weight: 600;
+    background-color: #FF5A5F; /* Cor oficial do Airbnb */
+    border: 2px solid #FF5A5F;
+    color: white;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efeito hover para o botão de WhatsApp e Airbnb */
+.navbar .btn-whatsapp:hover, .navbar .btn-airbnb:hover {
     background-color: #4CAF50;
     color: #fff;
     transform: scale(1.05);
     box-shadow: 0 4px 10px rgba(0, 128, 0, 0.2); /* Efeito de sombra mais forte ao passar o mouse */
 }
 
+.navbar .btn-airbnb:hover {
+    background-color: #FF3B3F; /* Cor mais forte para o botão do Airbnb */
+}
+
+/* Ajuste de tamanho para telas pequenas */
+@media (max-width: 768px) {
+    .navbar .btn-whatsapp, .navbar .btn-airbnb {
+        padding: 0.4rem 1rem;
+        font-size: 0.9rem;
+    }
+}
+
 
 
 /* Estilo do Carousel */
 .carousel-item img {
-    height: 100%; /* Ajuste conforme necessário */
-    object-fit: contain; /* Mostra a imagem completa */
-    width: 100%; /* Garante que a largura seja preenchida */
-    background-color: #000; /* Adiciona fundo caso existam espaços vazios */
+    width: 100%;
+    height: 100%; /* Ajuste automático conforme a altura do carrossel */
+    object-fit: cover; /* Faz com que a imagem cubra a área do carrossel sem distorção */
+    background-color: #000; /* Adiciona fundo preto caso existam espaços vazios */
 }
 
 
+/* Tamanho mínimo do Carousel */
 .carousel {
-    min-height: 800px; /* Garante que o container do carousel acompanhe a altura */
+    min-height: 800px; /* Garante que o container do carousel tenha pelo menos 800px de altura */
 }
 
 .carousel-item img {
