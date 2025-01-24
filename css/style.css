@@ -10,41 +10,32 @@ body {
 
 /* Navbar */
 .navbar {
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    /* Sombras mais sutis e modernas */
-    padding: 0.5rem 1rem;
-    /* Padding ajustado para dar mais espaço ao conteúdo */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Sombra moderna */
+    padding: 0.5rem 1rem; /* Espaço ajustado */
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: auto;
-    /* Ajuste automático de altura */
     z-index: 9999;
-    background-color: #414b32; /* Cor alterada para o padrão desejado */
-    transition: background-color 0.3s ease;
-}
-
-/* Efeito de hover para navbar */
-.navbar:hover {
-    background-color: #414b32; /* Mantém a mesma cor ao passar o mouse */
+    background-color: #414b32; /* Cor do fundo */
+    transition: background-color 0.3s ease; /* Transição suave */
+    display: flex;
+    align-items: center; /* Centraliza itens verticalmente */
 }
 
 /* Logo */
 .navbar-brand img {
-    height: 90px;
-    /* Tamanho ajustado da logo */
+    height: 110px; /* Altura reduzida da logo */
     background-color: #414b32; /* Fundo da logo na mesma cor da navbar */
-    padding: 10px;
-    /* Espaço aumentado ao redor da logo */
-    border-radius: 50%;
+    padding: 0; /* Espaçamento ao redor da logo */
 }
 
-.navbar-brand img:hover {
-    transform: scale(1.1);
-    /* Aumento da logo ao passar o mouse */
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
-    /* Efeito de brilho ao passar o mouse */
+/* Responsividade */
+@media (max-width: 768px) {
+    .navbar-brand img {
+        height: 80px; /* Ajusta o tamanho da logo em telas menores */
+    }
 }
 
 /* Estilo do Carousel */
