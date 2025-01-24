@@ -21,27 +21,23 @@ body {
     height: auto;
     /* Ajuste automático de altura */
     z-index: 9999;
-    background-color: #85927d;
-    /* Marrom esverdeado sólido */
+    background-color: #414b32; /* Cor alterada para o padrão desejado */
     transition: background-color 0.3s ease;
 }
 
 /* Efeito de hover para navbar */
 .navbar:hover {
-    background-color: #85927d;
-    /* Mantém a mesma cor ao passar o mouse */
+    background-color: #414b32; /* Mantém a mesma cor ao passar o mouse */
 }
 
 /* Logo */
 .navbar-brand img {
     height: 90px;
     /* Tamanho ajustado da logo */
-    background-color: #85927d;
-    /* Fundo da logo na mesma cor da navbar */
+    background-color: #414b32; /* Fundo da logo na mesma cor da navbar */
     padding: 10px;
     /* Espaço aumentado ao redor da logo */
     border-radius: 50%;
-
 }
 
 .navbar-brand img:hover {
@@ -137,10 +133,15 @@ body {
 
 .row {
     margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens se ajustem à tela */
+    justify-content: space-between; /* Espaço entre os itens */
 }
 
-.col-md-4 {
+.col-md-4, .col-sm-6 {
     padding: 20px;
+    flex: 1 1 30%; /* Ajusta a largura para 30% nas telas médias e maiores */
+    max-width: 30%; /* Limita a largura máxima */
 }
 
 .col-md-4 i {
@@ -162,6 +163,22 @@ body {
 .bi:hover {
     transform: scale(1.1);
 }
+
+/* Media Query para telas menores */
+@media (max-width: 768px) {
+    .col-md-4, .col-sm-6 {
+        flex: 1 1 45%; /* Ajusta a largura para 45% em telas pequenas */
+        max-width: 45%; /* Limita a largura máxima */
+    }
+}
+
+@media (max-width: 576px) {
+    .col-md-4, .col-sm-6 {
+        flex: 1 1 44%; /* Em telas muito pequenas, faz com que os itens ocupem toda a largura */
+        max-width: 100%; /* Limita a largura máxima */
+    }
+}
+
 
 #precos .card {
     border: 1px solid #ddd;
