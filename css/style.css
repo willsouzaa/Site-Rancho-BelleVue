@@ -398,20 +398,29 @@ body {
     transition: transform 0.3s ease, background-color 0.3s ease, opacity 0.2s ease; /* Adiciona transição suave */
 }
 
+#faq .accordion-button {
+    color: #414b32; /* Cor do texto dos botões */
+    background-color: #fff; /* Fundo branco */
+    border: 2px solid #414b32; /* Borda com a mesma cor do texto */
+    font-weight: 600; /* Peso da fonte */
+}
+
 #faq .accordion-button:not(.collapsed) {
-    background-color: #a8b564;
+    background-color: #414b32; /* Fundo verde amarelado quando expandido */
+    color: white; /* Cor do texto quando expandido */
 }
 
 #faq .accordion-item {
-    border: 1px solid #ddd;
-    border-radius: 10px;
+    border: 1px solid #414b32; /* Borda verde amarelada */
+    border-radius: 10px; /* Borda arredondada */
     margin-bottom: 10px;
 }
 
 #faq h2 {
-    color: #4b3b2b;
+    color: #414b32; /* Cor do título das perguntas */
     font-weight: 600;
 }
+
 
 /* Títulos com ícones maiores */
 .text-center h3 {
