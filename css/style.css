@@ -1,0 +1,582 @@
+/* Importando fontes do Google */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400&display=swap');
+
+body, html {
+    overflow-x: hidden;
+}
+
+/* Estilo Geral */
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    padding-top: 60px;
+}
+
+/* Navbar */
+.navbar {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Sombra moderna */
+    padding: 0.5rem 1rem; /* Espaço ajustado */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 9999;
+    background-color: #414b32; /* Cor do fundo */
+    transition: background-color 0.3s ease; /* Transição suave */
+    display: flex;
+    align-items: center; /* Centraliza itens verticalmente */
+}
+
+/* Logo */
+.navbar-brand img {
+    height: 80px; /* Altura da logo */
+    background-color: #414b32; /* Fundo da logo */
+    padding: 0; /* Espaçamento */
+    transition: height 0.3s ease; /* Suavidade na transição */
+}
+
+/* Menu Hamburguer */
+.navbar-toggler {
+    display: none;
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .navbar {
+        flex-wrap: wrap; /* Permite quebra de linha */
+        justify-content: space-between;
+    }
+
+    .navbar-brand img {
+        height: 60px; /* Reduz tamanho da logo em telas menores */
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        display: none; /* Esconde links por padrão */
+        width: 100%; /* Ocupa largura total */
+        text-align: center;
+    }
+    .navbar-toggler.active + .navbar-nav {
+        display: flex; /* Mostra links quando ativo */
+    }
+}
+
+/* Estilo do Carousel */
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    /* Ajuste automático conforme a altura do carrossel */
+    object-fit: cover;
+    /* Faz com que a imagem cubra a área do carrossel sem distorção */
+    background-color: #000;
+    /* Adiciona fundo preto caso existam espaços vazios */
+}
+
+
+/* Tamanho mínimo do Carousel */
+.carousel {
+    min-height: 800px;
+    /* Garante que o container do carousel tenha pelo menos 800px de altura */
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 800px;
+    /* Ajuste conforme necessário */
+    object-fit: cover;
+}
+
+/* Estilo do Carousel */
+.carousel-item img {
+    width: 100%;
+    height: 90vh;
+    /* Ocupa toda a altura da tela */
+    object-fit: cover;
+    /* Faz com que a imagem cubra toda a área sem distorcer */
+    background-color: #000;
+    /* Fundo preto para evitar espaços vazios */
+}
+
+/* Garante um tamanho mínimo para o carrossel */
+.carousel {
+    min-height: 400px;
+    /* Altura mínima para telas pequenas */
+}
+
+/* Ajuste para telas menores */
+@media (max-width: 768px) {
+    .carousel-item img {
+        height: 60vh;
+        /* Reduz a altura em telas menores */
+    }
+}
+
+/* Miniaturas do carrossel */
+.carousel-thumbnails {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;  /* Espaço entre o carrossel e as miniaturas */
+    gap: 15px;  /* Espaçamento entre miniaturas */
+}
+/* Torna os botões de controle transparentes, mas funcionais */
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: transparent;  /* Torna o fundo transparente */
+    border: none;  /* Remove borda */
+    color: transparent;  /* Torna o ícone invisível */
+    outline: none;  /* Remove qualquer contorno */
+    opacity: 0.5;  /* Torna os botões semi-transparentes */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: transparent;  /* Torna o ícone transparente */
+}
+
+/* Garantir que os botões fiquem invisíveis mas clicáveis em telas menores */
+@media (max-width: 768px) {
+    .carousel-control-prev,
+    .carousel-control-next {
+        opacity: 0.5;  /* Transparência também em telas menores */
+    }
+}
+
+
+
+
+/* Importando fontes do Google */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400&display=swap');
+
+/* Estilo específico para h2 na seção Comodidades */
+#comodidades h2 {
+    font-family: 'Montserrat', sans-serif; /* Fonte moderna e sofisticada */
+    font-size: 2.0rem; /* Tamanho maior */
+    color: #6c7b58; /* Cor um pouco mais escura para melhor contraste */
+    font-weight: 700; /* Mais grosso */
+    line-height: 1.4; /* Espaçamento entre linhas */
+    text-align: center; /* Centralizado */
+    text-transform: uppercase; /* Texto em maiúsculas */
+    opacity: 0.5; /* Deixa o ícone com 50% de transparência */
+    transition: transform 0.3s ease, background-color 0.3s ease, opacity 0.3git add cubic-bezier(0.075, 0.82, 0.165, 1)s ease; /* Adiciona transição suave */
+}
+
+/* Estilo específico para p na seção Comodidades */
+#comodidades p {
+    font-family: 'Roboto', sans-serif; /* Fonte clean e moderna */
+    font-size: 1.2rem; /* Tamanho para legibilidade */
+    color: #6c757d; /* Cor leve e clean */
+    line-height: 1.6; /* Espaçamento confortável */
+    text-align: center; /* Centralizado */
+}
+
+/* Estilo para o fundo e ícone na localização */
+.localizacao {
+    background-color: #e8f5e9; /* Fundo verde claro */
+    color: #414b32; /* Texto com cor mais escura para contraste */
+    padding: 5px 10px; /* Espaçamento interno */
+    border-radius: 8px; /* Bordas arredondadas */
+    display: inline-flex; /* Alinhamento do ícone e texto */
+    align-items: center; /* Centraliza o ícone verticalmente */
+    font-family: 'Roboto', sans-serif; /* Fonte moderna */
+    font-size: 1.2rem; /* Tamanho legível */
+    font-weight: bold; /* Negrito */
+}
+
+/* Estilo para o ícone de localização */
+.localizacao i {
+    margin-right: 8px; /* Espaço entre o ícone e o texto */
+    color: #414b32; /* Mesma cor do texto */
+    font-size: 1.2rem; /* Tamanho proporcional ao texto */
+}
+
+
+
+/* Ajusta a posição das miniaturas para que fiquem em cima do carrossel */
+.carousel {
+    position: relative;
+}
+
+/* Estilo para as miniaturas */
+.carousel-thumbnails {
+    position: absolute;
+    bottom: 10px;  /* Coloca as miniaturas na parte inferior do carrossel */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 10; /* Garante que as miniaturas fiquem sobre o carrossel */
+}
+
+
+/* Estilo individual das miniaturas */
+.thumb-indicator {
+    width: 80px;  /* Tamanho das miniaturas ajustado */
+    height: 55px;  /* Menor altura */
+    border-radius: 5px;
+    object-fit: cover;
+    opacity: 0.75;  /* Menos transparente */
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out, border 0.3s ease;
+}
+
+/* Miniatura ativa - quando clicada */
+.thumb-indicator.active {
+    opacity: 1;
+    transform: scale(1.1);  /* Destaca a miniatura ativa */
+    border: 3px solid #85927d;  /* Borda destacada */
+}
+
+/* Miniatura com hover */
+.thumb-indicator:hover {
+    opacity: 0.9;  /* Menos transparente no hover */
+    border: 3px solid #85927d;  /* Borda destacada no hover */
+}
+
+/* Ajuste para telas menores */
+@media (max-width: 768px) {
+    .thumb-indicator {
+        width: 60px;  /* Diminui o tamanho das miniaturas */
+        height: 40px;  /* Diminui a altura das miniaturas */
+    }
+}
+/* Ajuste para telas menores */
+@media (max-width: 550px) {
+    .thumb-indicator {
+        width: 40px;  /* Diminui o tamanho das miniaturas */
+        height: 40px;  /* Diminui a altura das miniaturas */
+    }
+}
+
+/* Estilo dos Itens */
+.container {
+    margin-top: 50px;
+}
+
+.row {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens se ajustem à tela */
+    justify-content: space-between; /* Espaço entre os itens */
+}
+
+.col-md-4, .col-sm-6 {
+    padding: 20px;
+    flex: 1 1 30%; /* Ajusta a largura para 30% nas telas médias e maiores */
+    max-width: 30%; /* Limita a largura máxima */
+}
+
+.col-md-4 i {
+    font-size: 2.5rem;
+    color:#85927d;
+    margin-bottom: 10px;
+}
+
+.col-md-4 p {
+    color: #6c757d;
+    font-size: 1rem;
+}
+
+/* Ícones de Destaque */
+.bi {
+    transition: transform 0.3s ease;
+}
+
+.bi:hover {
+    transform: scale(1.1);
+}
+
+/* Media Query para telas menores */
+@media (max-width: 768px) {
+    .col-md-4, .col-sm-6 {
+        flex: 1 1 45%; /* Ajusta a largura para 45% em telas pequenas */
+        max-width: 45%; /* Limita a largura máxima */
+    }
+}
+
+@media (max-width: 576px) {
+    .col-md-4, .col-sm-6 {
+        flex: 1 1 44%; /* Em telas muito pequenas, faz com que os itens ocupem toda a largura */
+        max-width: 100%; /* Limita a largura máxima */
+    }
+}
+.icon-style {
+    border-radius: 50%; /* Bordas arredondadas */
+    padding: 15px; /* Adiciona um espaço interno */
+    background-color: #a8b564; /* Verde amarelado */
+    color: white; /* Garante que o ícone fique visível */
+    opacity: 0.5; /* Deixa o ícone com 50% de transparência */
+    transition: transform 0.3s ease, background-color 0.3s ease, opacity 0.5s ease; /* Adiciona transição suave */
+}
+
+.icon-style:hover {
+    background-color: #8c9e46; /* Altera para um verde amarelado mais escuro no hover */
+    transform: scale(1.1); /* Destaca o ícone com um zoom ao passar o mouse */
+    opacity: 1; /* Torna o ícone totalmente opaco ao passar o mouse */
+}
+
+
+#precos .card {
+    border-radius: 20px;  /* Bordas mais arredondadas */
+    overflow: hidden;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;  /* Transição suave */
+}
+
+#precos .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+#precos .btn {
+    background-color: #3b5a4f;  /* Verde mais escuro */
+    color: white;
+    font-weight: 600;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#precos .btn:hover {
+    background-color: #6c7b58;  /* Verde mais claro para o efeito de hover */
+    transform: scale(1.05);  /* Efeito de ampliação do botão */
+}
+
+#precos h2 {
+    font-size: 2.5rem;
+    color: #6c7b58;
+}
+#precos h5 {
+    color: #6c7b58; /* Cor verde amarelada */
+    font-weight: 600; /* Define o peso da fonte */
+}
+
+
+#precos .card-title {
+    color: #6c7b58;
+    font-weight: 600;
+}
+
+#precos .list-unstyled li {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    color: #6c7b58;
+}
+
+#precos .card-body p {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+#precos .card-body a {
+    text-decoration: none;
+}
+
+#precos .card:hover {
+    transform: translateY(-5px);  /* Efeito de "levitação" ao passar o mouse */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);  /* Sombras mais suaves para destaque */
+}
+
+@media (max-width: 768px) {
+    #precos .card-body {
+        padding: 20px;
+    }
+}
+
+#faq .accordion-button {
+    background-color: #fff; /* Fundo branco */
+    color: #6c7b58; /* Cor do texto dos botões */
+    border: 2px solid #6c7b58; /* Borda com a mesma cor do texto */
+    font-weight: 600; /* Peso da fonte */
+}
+
+#faq .accordion-button:not(.collapsed) {
+    background-color: #fff; /* Mantém o fundo branco quando expandido */
+    color: #6c7b58; /* Cor do texto quando expandido */
+}
+
+#faq .accordion-item {
+    border: 1px solid #6c7b58; /* Borda verde amarelada */
+    margin-bottom: 10px;
+}
+
+#faq h2 {
+    color: #6c7b58; /* Cor do título das perguntas */
+    font-weight: 600;
+}
+
+
+/* Títulos com ícones maiores */
+.text-center h3 {
+    font-size: 2.2rem;  /* Aumenta o tamanho do título */
+    font-weight: 600;
+}
+
+.text-center i {
+    font-size: 1.5rem;  /* Aumenta o tamanho do ícone */
+    margin-left: 10px;  /* Distância entre o título e o ícone */
+}
+
+/* Cor dos textos */
+.text-center p {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+/* Estilo para o mapa responsivo */
+.embed-responsive {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* Aspect ratio de 16:9 */
+    overflow: hidden;
+    max-width: 100%;
+    background: #fff;
+}
+
+.embed-responsive iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 30px;
+    right: 20px; /* Define a posição no lado direito */
+    z-index: 1000;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%; /* Torna o botão redondo */
+    background-color: #25d366; /* Cor verde oficial do WhatsApp */
+    color: white; /* Cor do ícone */
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra */
+    text-decoration: none; /* Remove sublinhado */
+    font-size: 28px; /* Tamanho do ícone */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animação suave */
+}
+
+.whatsapp-button:hover {
+    transform: scale(1.1); /* Ampliação no hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Sombra mais intensa */
+    background-color: #20c659; /* Cor verde mais escura no hover */
+}
+
+.whatsapp-button i {
+    color: white; /* Ícone branco */
+}
+
+
+footer {
+    background-color: #4b3b2b; /* Marrom sofisticado */
+    color: #fff8e1; /* Tom bege claro para contraste */
+    padding: 50px 0 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+footer .btn {
+    background-color: #e1c16e;
+    color: #4b3b2b; 
+    font-weight: 600;
+    border-radius: 25px;
+    padding: 12px 30px;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+footer .btn:hover {
+    background-color: #d0a04b;
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+footer h5 {
+    font-weight: 700;
+    font-size: 20px;
+    color: #ffdd94; /* Dourado suave para melhor destaque */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+footer p, footer ul li {
+    color: #fff8e1; /* Texto bege claro para melhor contraste */
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+footer ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+footer a {
+    color: #ffdd94; /* Link com destaque elegante */
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+}
+footer .col-md-4 i {
+    font-size: 2.5rem;
+    color: #fff; /* Cor branca aplicada somente no footer */
+    margin-bottom: 10px;
+}
+
+footer .col-md-4 p {
+    color: #fff; /* Cor branca aplicada somente no footer */
+    font-size: 1rem;
+}
+
+
+footer a:hover {
+    color: #e1c16e;
+    text-decoration: underline;
+}
+
+footer hr {
+    border-top: 1px solid #e1c16e;
+}
+
+footer .social-links a {
+    font-size: 24px;
+    margin: 0 15px;
+    color: #ffdd94;
+    transition: all 0.3s ease-in-out;
+}
+
+footer .social-links a:hover {
+    color: #e1c16e;
+    transform: scale(1.2);
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #e1c16e;
+    font-size: 14px;
+    color: #ccc0a0; /* Cinza suave para menor destaque */
+}
+
+footer iframe {
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
