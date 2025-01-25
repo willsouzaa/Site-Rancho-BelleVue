@@ -26,15 +26,62 @@ body {
 
 /* Logo */
 .navbar-brand img {
-    height: 110px; /* Altura reduzida da logo */
-    background-color: #414b32; /* Fundo da logo na mesma cor da navbar */
-    padding: 0; /* Espaçamento ao redor da logo */
+    height: 80px; /* Altura da logo */
+    background-color: #414b32; /* Fundo da logo */
+    padding: 0; /* Espaçamento */
+    transition: height 0.3s ease; /* Suavidade na transição */
+}
+
+/* Links da navbar */
+.navbar-nav {
+    display: flex;
+    gap: 1rem; /* Espaçamento entre links */
+}
+
+.nav-link {
+    color: #fff; /* Cor dos links */
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease; /* Suavidade na transição */
+}
+
+.nav-link:hover {
+    color: #d1d1d1; /* Efeito hover */
+}
+
+/* Menu Hamburguer */
+.navbar-toggler {
+    display: none;
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: #fff;
 }
 
 /* Responsividade */
 @media (max-width: 768px) {
+    .navbar {
+        flex-wrap: wrap; /* Permite quebra de linha */
+        justify-content: space-between;
+    }
+
     .navbar-brand img {
-        height: 80px; /* Ajusta o tamanho da logo em telas menores */
+        height: 60px; /* Reduz tamanho da logo em telas menores */
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        display: none; /* Esconde links por padrão */
+        width: 100%; /* Ocupa largura total */
+        text-align: center;
+    }
+
+    .navbar-toggler {
+        display: block; /* Mostra o botão hamburguer */
+    }
+
+    .navbar-toggler.active + .navbar-nav {
+        display: flex; /* Mostra links quando ativo */
     }
 }
 
