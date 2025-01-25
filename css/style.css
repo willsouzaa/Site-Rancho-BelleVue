@@ -294,30 +294,34 @@ body {
 
 
 #precos .card {
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #fff;
     border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 #precos .card-body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: 30px;
 }
 
 #precos .btn {
-    background-color: #4b3b2b;
+    background-color: #3b5a4f;  /* Verde mais escuro */
     color: white;
     font-weight: 600;
+    border-radius: 5px;
+    text-transform: uppercase;
 }
 
 #precos .btn:hover {
-    background-color: #85927d;
+    background-color: #4b3b2b;  /* Verde mais claro para o efeito de hover */
 }
 
 #precos h2 {
     font-size: 2.5rem;
-    color:#85927d;
+    color: #4b3b2b;
 }
 
 #precos .card-title {
@@ -328,10 +332,22 @@ body {
 #precos .list-unstyled li {
     font-size: 0.9rem;
     margin-bottom: 5px;
+    color: #6c7b58;
 }
 
 #precos .card-body p {
     margin-bottom: 15px;
+    color: #333;
+}
+
+#precos .card-body a {
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    #precos .card-body {
+        padding: 20px;
+    }
 }
 
 
