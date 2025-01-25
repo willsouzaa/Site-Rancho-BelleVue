@@ -1,3 +1,6 @@
+/* Importando fontes do Google */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400&display=swap');
+
 /* Estilo Geral */
 body {
     font-family: 'Poppins', sans-serif;
@@ -32,23 +35,6 @@ body {
     transition: height 0.3s ease; /* Suavidade na transição */
 }
 
-/* Links da navbar */
-.navbar-nav {
-    display: flex;
-    gap: 1rem; /* Espaçamento entre links */
-}
-
-.nav-link {
-    color: #fff; /* Cor dos links */
-    text-decoration: none;
-    font-size: 1rem;
-    transition: color 0.3s ease; /* Suavidade na transição */
-}
-
-.nav-link:hover {
-    color: #d1d1d1; /* Efeito hover */
-}
-
 /* Menu Hamburguer */
 .navbar-toggler {
     display: none;
@@ -75,11 +61,6 @@ body {
         width: 100%; /* Ocupa largura total */
         text-align: center;
     }
-
-    .navbar-toggler {
-        display: block; /* Mostra o botão hamburguer */
-    }
-
     .navbar-toggler.active + .navbar-nav {
         display: flex; /* Mostra links quando ativo */
     }
@@ -143,26 +124,108 @@ body {
     gap: 15px;  /* Espaçamento entre miniaturas */
 }
 
-.thumb-indicator {
-    width: 100px;  /* Aumentando o tamanho das miniaturas */
-    height: 70px;
-    border-radius: 5px;
-    object-fit: cover;
-    opacity: 0.5;
-    cursor: pointer;
-    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+
+
+
+/* Importando fontes do Google */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400&display=swap');
+
+/* Estilo específico para h2 na seção Comodidades */
+#comodidades h2 {
+    font-family: 'Montserrat', sans-serif; /* Fonte moderna e sofisticada */
+    font-size: 2.5rem; /* Tamanho maior */
+    color: #b5b5a5; /* Cor um pouco mais escura para melhor contraste */
+    font-weight: 700; /* Mais grosso */
+    line-height: 1.4; /* Espaçamento entre linhas */
+    text-align: center; /* Centralizado */
+    text-transform: uppercase; /* Texto em maiúsculas */
 }
 
+/* Estilo específico para p na seção Comodidades */
+#comodidades p {
+    font-family: 'Roboto', sans-serif; /* Fonte clean e moderna */
+    font-size: 1.2rem; /* Tamanho para legibilidade */
+    color: #9a9a8c; /* Cor leve e clean */
+    line-height: 1.6; /* Espaçamento confortável */
+    text-align: center; /* Centralizado */
+}
+
+/* Estilo para o fundo e ícone na localização */
+.localizacao {
+    background-color: #e8f5e9; /* Fundo verde claro */
+    color: #414b32; /* Texto com cor mais escura para contraste */
+    padding: 5px 10px; /* Espaçamento interno */
+    border-radius: 8px; /* Bordas arredondadas */
+    display: inline-flex; /* Alinhamento do ícone e texto */
+    align-items: center; /* Centraliza o ícone verticalmente */
+    font-family: 'Roboto', sans-serif; /* Fonte moderna */
+    font-size: 1.2rem; /* Tamanho legível */
+    font-weight: bold; /* Negrito */
+}
+
+/* Estilo para o ícone de localização */
+.localizacao i {
+    margin-right: 8px; /* Espaço entre o ícone e o texto */
+    color: #414b32; /* Mesma cor do texto */
+    font-size: 1.2rem; /* Tamanho proporcional ao texto */
+}
+
+
+
+/* Ajusta a posição das miniaturas para que fiquem em cima do carrossel */
+.carousel {
+    position: relative;
+}
+
+/* Estilo para as miniaturas */
+.carousel-thumbnails {
+    position: absolute;
+    bottom: 10px;  /* Coloca as miniaturas na parte inferior do carrossel */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 10; /* Garante que as miniaturas fiquem sobre o carrossel */
+}
+
+/* Estilo individual das miniaturas */
+.thumb-indicator {
+    width: 80px;  /* Tamanho das miniaturas ajustado */
+    height: 55px;  /* Menor altura */
+    border-radius: 5px;
+    object-fit: cover;
+    opacity: 0.75;  /* Menos transparente */
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out, border 0.3s ease;
+}
+
+/* Miniatura ativa - quando clicada */
 .thumb-indicator.active {
     opacity: 1;
     transform: scale(1.1);  /* Destaca a miniatura ativa */
     border: 3px solid #85927d;  /* Borda destacada */
 }
 
+/* Miniatura com hover */
 .thumb-indicator:hover {
-    opacity: 0.8;
+    opacity: 0.9;  /* Menos transparente no hover */
+    border: 3px solid #85927d;  /* Borda destacada no hover */
 }
 
+/* Ajuste para telas menores */
+@media (max-width: 768px) {
+    .thumb-indicator {
+        width: 60px;  /* Diminui o tamanho das miniaturas */
+        height: 40px;  /* Diminui a altura das miniaturas */
+    }
+}
+/* Ajuste para telas menores */
+@media (max-width: 550px) {
+    .thumb-indicator {
+        width: 40px;  /* Diminui o tamanho das miniaturas */
+        height: 40px;  /* Diminui a altura das miniaturas */
+    }
+}
 
 /* Estilo dos Itens */
 .container {
@@ -215,6 +278,18 @@ body {
         flex: 1 1 44%; /* Em telas muito pequenas, faz com que os itens ocupem toda a largura */
         max-width: 100%; /* Limita a largura máxima */
     }
+}
+.icon-style {
+    border-radius: 50%; /* Bordas arredondadas */
+    padding: 15px; /* Adiciona um espaço interno */
+    background-color: #a8b564; /* Verde amarelado */
+    color: white; /* Garante que o ícone fique visível */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.icon-style:hover {
+    background-color: #8c9e46; /* Altera para um verde amarelado mais escuro no hover */
+    transform: scale(1.1); /* Destaca o ícone com um zoom ao passar o mouse */
 }
 
 
