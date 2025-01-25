@@ -311,12 +311,14 @@ body {
     padding: 15px; /* Adiciona um espaço interno */
     background-color: #a8b564; /* Verde amarelado */
     color: white; /* Garante que o ícone fique visível */
-    transition: transform 0.3s ease, background-color 0.3s ease;
+    opacity: 0.9; /* Deixa o ícone um pouco transparente */
+    transition: transform 0.3s ease, background-color 0.3s ease, opacity 0.3s ease; /* Adiciona transição suave */
 }
 
 .icon-style:hover {
     background-color: #8c9e46; /* Altera para um verde amarelado mais escuro no hover */
     transform: scale(1.1); /* Destaca o ícone com um zoom ao passar o mouse */
+    opacity: 1; /* Torna o ícone totalmente opaco ao passar o mouse */
 }
 
 
@@ -386,14 +388,14 @@ body {
 }
 
 #faq .accordion-button {
-    background-color: #85927d;
+    background-color: #a8b564;
     color: white;
     font-weight: 600;
     border-radius: 10px;
 }
 
 #faq .accordion-button:not(.collapsed) {
-    background-color: #85927d;
+    background-color: #a8b564;
 }
 
 #faq .accordion-item {
