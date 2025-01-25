@@ -123,6 +123,28 @@ body {
     margin-top: 20px;  /* Espaço entre o carrossel e as miniaturas */
     gap: 15px;  /* Espaçamento entre miniaturas */
 }
+/* Torna os botões de controle transparentes, mas funcionais */
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: transparent;  /* Torna o fundo transparente */
+    border: none;  /* Remove borda */
+    color: transparent;  /* Torna o ícone invisível */
+    outline: none;  /* Remove qualquer contorno */
+    opacity: 0.5;  /* Torna os botões semi-transparentes */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: transparent;  /* Torna o ícone transparente */
+}
+
+/* Garantir que os botões fiquem invisíveis mas clicáveis em telas menores */
+@media (max-width: 768px) {
+    .carousel-control-prev,
+    .carousel-control-next {
+        opacity: 0.5;  /* Transparência também em telas menores */
+    }
+}
 
 
 
@@ -134,7 +156,7 @@ body {
 #comodidades h2 {
     font-family: 'Montserrat', sans-serif; /* Fonte moderna e sofisticada */
     font-size: 2.5rem; /* Tamanho maior */
-    color: #b5b5a5; /* Cor um pouco mais escura para melhor contraste */
+    color: #6c7b58; /* Cor um pouco mais escura para melhor contraste */
     font-weight: 700; /* Mais grosso */
     line-height: 1.4; /* Espaçamento entre linhas */
     text-align: center; /* Centralizado */
@@ -187,6 +209,7 @@ body {
     gap: 10px;
     z-index: 10; /* Garante que as miniaturas fiquem sobre o carrossel */
 }
+
 
 /* Estilo individual das miniaturas */
 .thumb-indicator {
@@ -294,10 +317,11 @@ body {
 
 
 #precos .card {
-    border-radius: 15px;
+    border-radius: 20px;  /* Bordas mais arredondadas */
     overflow: hidden;
     background-color: #fff;
     border: 1px solid #ddd;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;  /* Transição suave */
 }
 
 #precos .card-body {
@@ -313,10 +337,12 @@ body {
     font-weight: 600;
     border-radius: 5px;
     text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 #precos .btn:hover {
     background-color: #4b3b2b;  /* Verde mais claro para o efeito de hover */
+    transform: scale(1.05);  /* Efeito de ampliação do botão */
 }
 
 #precos h2 {
@@ -344,12 +370,16 @@ body {
     text-decoration: none;
 }
 
+#precos .card:hover {
+    transform: translateY(-5px);  /* Efeito de "levitação" ao passar o mouse */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);  /* Sombras mais suaves para destaque */
+}
+
 @media (max-width: 768px) {
     #precos .card-body {
         padding: 20px;
     }
 }
-
 
 #faq .accordion-button {
     background-color: #85927d;
@@ -371,6 +401,23 @@ body {
 #faq h2 {
     color: #4b3b2b;
     font-weight: 600;
+}
+
+/* Títulos com ícones maiores */
+.text-center h3 {
+    font-size: 2.2rem;  /* Aumenta o tamanho do título */
+    font-weight: 600;
+}
+
+.text-center i {
+    font-size: 1.5rem;  /* Aumenta o tamanho do ícone */
+    margin-left: 10px;  /* Distância entre o título e o ícone */
+}
+
+/* Cor dos textos */
+.text-center p {
+    font-size: 1rem;
+    color: #6c757d;
 }
 
 /* Estilo para o mapa responsivo */
@@ -396,7 +443,7 @@ body {
 
 .whatsapp-button {
     position: fixed;
-    bottom: 20px;
+    bottom: 30px;
     right: 20px; /* Define a posição no lado direito */
     z-index: 1000;
     width: 60px;
