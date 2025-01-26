@@ -134,7 +134,7 @@ body {
     border: none;  /* Remove borda */
     color: transparent;  /* Torna o ícone invisível */
     outline: none;  /* Remove qualquer contorno */
-    opacity: 0.5;  /* Torna os botões semi-transparentes */
+    opacity: 0.9;  /* Torna os botões semi-transparentes */
 }
 
 .carousel-control-prev-icon,
@@ -165,8 +165,6 @@ body {
     line-height: 1.4; /* Espaçamento entre linhas */
     text-align: center; /* Centralizado */
     text-transform: uppercase; /* Texto em maiúsculas */
-    opacity: 0.5; /* Deixa o ícone com 50% de transparência */
-    transition: transform 0.3s ease, background-color 0.3s ease, opacity 0.3git add cubic-bezier(0.075, 0.82, 0.165, 1)s ease; /* Adiciona transição suave */
 }
 
 /* Estilo específico para p na seção Comodidades */
@@ -311,14 +309,14 @@ body {
 .icon-style {
     border-radius: 50%; /* Bordas arredondadas */
     padding: 15px; /* Adiciona um espaço interno */
-    background-color: #a8b564; /* Verde amarelado */
+    background-color: #6c7b58; /* Verde amarelado */
     color: white; /* Garante que o ícone fique visível */
-    opacity: 0.5; /* Deixa o ícone com 50% de transparência */
+    opacity: 0.9; /* Deixa o ícone com 50% de transparência */
     transition: transform 0.3s ease, background-color 0.3s ease, opacity 0.5s ease; /* Adiciona transição suave */
 }
 
 .icon-style:hover {
-    background-color: #8c9e46; /* Altera para um verde amarelado mais escuro no hover */
+    background-color: #6c7b58; /* Altera para um verde amarelado mais escuro no hover */
     transform: scale(1.1); /* Destaca o ícone com um zoom ao passar o mouse */
     opacity: 1; /* Torna o ícone totalmente opaco ao passar o mouse */
 }
@@ -340,7 +338,7 @@ body {
 }
 
 #precos .btn {
-    background-color: #3b5a4f;  /* Verde mais escuro */
+    background-color: #6c7b58;  /* Verde mais escuro */
     color: white;
     font-weight: 600;
     border-radius: 5px;
