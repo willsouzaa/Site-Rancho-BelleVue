@@ -33,7 +33,7 @@ body {
 
 /* Logo */
 .navbar-brand img {
-    height: 80px; /* Altura da logo */
+    height: 90px; /* Altura da logo */
     background-color: #414b32; /* Fundo da logo */
     padding: 0; /* Espaçamento */
     transition: height 0.3s ease; /* Suavidade na transição */
@@ -56,7 +56,7 @@ body {
     }
 
     .navbar-brand img {
-        height: 60px; /* Reduz tamanho da logo em telas menores */
+        height: 65px; /* Reduz tamanho da logo em telas menores */
     }
 
     .navbar-nav {
