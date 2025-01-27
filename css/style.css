@@ -536,7 +536,7 @@ footer h5 {
 }
 
 footer p, footer ul li {
-    color: #fff8e1; /* Texto bege claro para melhor contraste */
+    color: #fff; /* Texto bege claro para melhor contraste */
     font-size: 16px;
     margin-bottom: 10px;
 }
