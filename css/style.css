@@ -178,8 +178,8 @@ body {
 
 /* Estilo para o fundo e ícone na localização */
 .localizacao {
-    background-color: #e8f5e9; /* Fundo verde claro */
-    color: #414b32; /* Texto com cor mais escura para contraste */
+    background-color:#d8d6af; /* Fundo verde claro */
+    color:   #6c7b58; /* Texto com cor mais escura para contraste */
     padding: 5px 10px; /* Espaçamento interno */
     border-radius: 8px; /* Bordas arredondadas */
     display: inline-flex; /* Alinhamento do ícone e texto */
@@ -192,7 +192,7 @@ body {
 /* Estilo para o ícone de localização */
 .localizacao i {
     margin-right: 8px; /* Espaço entre o ícone e o texto */
-    color: #414b32; /* Mesma cor do texto */
+    color:  #6c7b58; /* Mesma cor do texto */
     font-size: 1.2rem; /* Tamanho proporcional ao texto */
 }
 
@@ -566,9 +566,9 @@ footer .social-links a:hover {
     text-align: center;
     margin-top: 40px;
     padding-top: 20px;
-    border-top: 1px solid #e1c16e;
+    border-top: 1px solid #84b911;
     font-size: 14px;
-    color: #ccc0a0; /* Cinza suave para menor destaque */
+    color:#84b911;
 }
 
 footer iframe {
