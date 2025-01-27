@@ -530,7 +530,7 @@ footer .btn:hover {
 footer h5 {
     font-weight: 700;
     font-size: 20px;
-    color: #ffdd94; /* Dourado suave para melhor destaque */
+    color: #fff; /* Dourado suave para melhor destaque */
     margin-bottom: 20px;
     text-transform: uppercase;
 }
