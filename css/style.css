@@ -179,7 +179,7 @@ body {
 /* Estilo para o fundo e ícone na localização */
 .localizacao {
     background-color:#d8d6af; /* Fundo verde claro */
-    color:   #6c7b58; /* Texto com cor mais escura para contraste */
+    color:   #4a5a35; /* Texto com cor mais escura para contraste */
     padding: 5px 10px; /* Espaçamento interno */
     border-radius: 8px; /* Bordas arredondadas */
     display: inline-flex; /* Alinhamento do ícone e texto */
@@ -187,12 +187,13 @@ body {
     font-family: 'Roboto', sans-serif; /* Fonte moderna */
     font-size: 1.2rem; /* Tamanho legível */
     font-weight: bold; /* Negrito */
+    opacity: 0.7; /* Deixa o ícone parcialmente transparente */
 }
 
 /* Estilo para o ícone de localização */
 .localizacao i {
     margin-right: 8px; /* Espaço entre o ícone e o texto */
-    color:  #6c7b58; /* Mesma cor do texto */
+    color:  #4a5a35; /* Mesma cor do texto */
     font-size: 1.2rem; /* Tamanho proporcional ao texto */
 }
 
@@ -309,7 +310,7 @@ body {
     border-radius: 50%; /* Bordas arredondadas */
     padding: 15px; /* Adiciona um espaço interno */
     background-color: #d8d6af; /* Fundo verde amarelado */
-    color: #739E2F; /* Cor do ícone */
+    color: #4a5a35; /* Cor do interior do ícone */
     opacity: 0.9; /* Deixa o ícone parcialmente transparente */
     transition: transform 0.3s ease, background-color 0.3s ease, opacity 0.5s ease; /* Adiciona transição suave */
 }
@@ -318,7 +319,9 @@ body {
     background-color: #6c7b58; /* Fundo mais escuro no hover */
     transform: scale(1.1); /* Destaca o ícone com um zoom ao passar o mouse */
     opacity: 1; /* Remove a transparência no hover */
+    color: #d8d6af; /* Alterar a cor do ícone no hover, opcional */
 }
+
 #precos .card {
     border-radius: 20px;  /* Bordas mais arredondadas */
     overflow: hidden;
