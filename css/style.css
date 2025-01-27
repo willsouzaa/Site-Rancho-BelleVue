@@ -308,19 +308,17 @@ body {
 .icon-style {
     border-radius: 50%; /* Bordas arredondadas */
     padding: 15px; /* Adiciona um espaço interno */
-    background-color: #6c7b58; /* Verde amarelado */
-    color: white; /* Garante que o ícone fique visível */
-    opacity: 0.9; /* Deixa o ícone com 50% de transparência */
+    background-color: #d8d6af; /* Fundo verde amarelado */
+    color: #739E2F; /* Cor do ícone */
+    opacity: 0.9; /* Deixa o ícone parcialmente transparente */
     transition: transform 0.3s ease, background-color 0.3s ease, opacity 0.5s ease; /* Adiciona transição suave */
 }
 
 .icon-style:hover {
-    background-color: #6c7b58; /* Altera para um verde amarelado mais escuro no hover */
+    background-color: #6c7b58; /* Fundo mais escuro no hover */
     transform: scale(1.1); /* Destaca o ícone com um zoom ao passar o mouse */
-    opacity: 1; /* Torna o ícone totalmente opaco ao passar o mouse */
+    opacity: 1; /* Remove a transparência no hover */
 }
-
-
 #precos .card {
     border-radius: 20px;  /* Bordas mais arredondadas */
     overflow: hidden;
@@ -337,7 +335,7 @@ body {
 }
 
 #precos .btn {
-    background-color: #6c7b58;  /* Verde mais escuro */
+    background-color: #84b911;  /* Verde mais escuro */
     color: white;
     font-weight: 600;
     border-radius: 5px;
@@ -346,7 +344,7 @@ body {
 }
 
 #precos .btn:hover {
-    background-color: #6c7b58;  /* Verde mais claro para o efeito de hover */
+    background-color: #84b911;  /* Verde mais claro para o efeito de hover */
     transform: scale(1.05);  /* Efeito de ampliação do botão */
 }
 
