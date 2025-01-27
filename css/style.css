@@ -453,6 +453,26 @@ body {
     border: 0;
 }
 
+/* CSS para tornar o vídeo responsivo */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* Proporção de 16:9 (altura / largura * 100) */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000; /* Fundo preto caso o vídeo tenha espaços vazios */
+}
+
+.video-container iframe,
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
 .whatsapp-button {
     position: fixed;
     bottom: 30px;
