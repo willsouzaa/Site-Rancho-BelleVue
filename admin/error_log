@@ -1,0 +1,117 @@
+[28-Jun-2025 11:20:40 America/Fortaleza] PHP Warning:  Undefined array key "senha" in /home3/rachobellevue/public_html/admin/index.php on line 3
+[28-Jun-2025 11:21:10 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'usuario'@'localhost' (using password: YES) in /home3/rachobellevue/public_html/admin/processa.php:5
+Stack trace:
+#0 /home3/rachobellevue/public_html/admin/processa.php(5): mysqli->__construct('localhost', 'usuario', Object(SensitiveParameterValue), 'banco')
+#1 {main}
+  thrown in /home3/rachobellevue/public_html/admin/processa.php on line 5
+[28-Jun-2025 11:47:17 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'usuario'@'localhost' (using password: YES) in /home3/rachobellevue/public_html/admin/processa.php:5
+Stack trace:
+#0 /home3/rachobellevue/public_html/admin/processa.php(5): mysqli->__construct('localhost', 'usuario', Object(SensitiveParameterValue), 'banco')
+#1 {main}
+  thrown in /home3/rachobellevue/public_html/admin/processa.php on line 5
+[28-Jun-2025 14:36:40 America/Fortaleza] PHP Warning:  Undefined array key "senha" in /home3/rachobellevue/public_html/admin/index.php on line 3
+[28-Jun-2025 14:36:51 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'usuario'@'localhost' (using password: YES) in /home3/rachobellevue/public_html/admin/processa.php:5
+Stack trace:
+#0 /home3/rachobellevue/public_html/admin/processa.php(5): mysqli->__construct('localhost', 'usuario', Object(SensitiveParameterValue), 'banco')
+#1 {main}
+  thrown in /home3/rachobellevue/public_html/admin/processa.php on line 5
+[28-Jun-2025 14:37:18 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'usuario'@'localhost' (using password: YES) in /home3/rachobellevue/public_html/admin/processa.php:5
+Stack trace:
+#0 /home3/rachobellevue/public_html/admin/processa.php(5): mysqli->__construct('localhost', 'usuario', Object(SensitiveParameterValue), 'banco')
+#1 {main}
+  thrown in /home3/rachobellevue/public_html/admin/processa.php on line 5
+[28-Jun-2025 14:37:27 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'usuario'@'localhost' (using password: YES) in /home3/rachobellevue/public_html/admin/processa.php:5
+Stack trace:
+#0 /home3/rachobellevue/public_html/admin/processa.php(5): mysqli->__construct('localhost', 'usuario', Object(SensitiveParameterValue), 'banco')
+#1 {main}
+  thrown in /home3/rachobellevue/public_html/admin/processa.php on line 5
+[28-Jun-2025 16:09:07 America/Fortaleza] PHP Warning:  Undefined array key "data" in /home3/rachobellevue/public_html/admin/processa.php on line 7
+[28-Jun-2025 16:10:39 America/Fortaleza] PHP Warning:  Undefined array key "data" in /home3/rachobellevue/public_html/admin/processa.php on line 7
+[28-Jun-2025 16:14:25 America/Fortaleza] PHP Warning:  Undefined array key "data" in /home3/rachobellevue/public_html/admin/processa.php on line 7
+[28-Jun-2025 16:18:40 America/Fortaleza] PHP Warning:  Undefined array key "data" in /home3/rachobellevue/public_html/admin/processa.php on line 7
+[28-Jun-2025 16:23:27 America/Fortaleza] PHP Warning:  Undefined array key "data" in /home3/rachobellevue/public_html/admin/processa.php on line 7
+[28-Jun-2025 16:34:30 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'data' in 'order clause' in /home3/rachobellevue/public_html/admin/calendario.php:6
+Stack trace:
+#0 /home3/rachobellevue/public_html/admin/calendario.php(6): mysqli->query('SELECT * FROM d...')
+#1 {main}
+  thrown in /home3/rachobellevue/public_html/admin/calendario.php on line 6
+[28-Jun-2025 16:34:32 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'data' in 'order clause' in /home3/rachobellevue/public_html/admin/calendario.php:6
+Stack trace:
+#0 /home3/rachobellevue/public_html/admin/calendario.php(6): mysqli->query('SELECT * FROM d...')
+#1 {main}
+  thrown in /home3/rachobellevue/public_html/admin/calendario.php on line 6
+[28-Jun-2025 16:34:42 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'data' in 'order clause' in /home3/rachobellevue/public_html/admin/calendario.php:6
+Stack trace:
+#0 /home3/rachobellevue/public_html/admin/calendario.php(6): mysqli->query('SELECT * FROM d...')
+#1 {main}
+  thrown in /home3/rachobellevue/public_html/admin/calendario.php on line 6
+[28-Jun-2025 16:35:13 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'data' in 'order clause' in /home3/rachobellevue/public_html/admin/calendario.php:6
+Stack trace:
+#0 /home3/rachobellevue/public_html/admin/calendario.php(6): mysqli->query('SELECT * FROM d...')
+#1 {main}
+  thrown in /home3/rachobellevue/public_html/admin/calendario.php on line 6
+[28-Jun-2025 16:35:14 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'data' in 'order clause' in /home3/rachobellevue/public_html/admin/calendario.php:6
+Stack trace:
+#0 /home3/rachobellevue/public_html/admin/calendario.php(6): mysqli->query('SELECT * FROM d...')
+#1 {main}
+  thrown in /home3/rachobellevue/public_html/admin/calendario.php on line 6
+[28-Jun-2025 16:35:17 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'data' in 'order clause' in /home3/rachobellevue/public_html/admin/calendario.php:6
+Stack trace:
+#0 /home3/rachobellevue/public_html/admin/calendario.php(6): mysqli->query('SELECT * FROM d...')
+#1 {main}
+  thrown in /home3/rachobellevue/public_html/admin/calendario.php on line 6
+[28-Jun-2025 16:35:18 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'data' in 'order clause' in /home3/rachobellevue/public_html/admin/calendario.php:6
+Stack trace:
+#0 /home3/rachobellevue/public_html/admin/calendario.php(6): mysqli->query('SELECT * FROM d...')
+#1 {main}
+  thrown in /home3/rachobellevue/public_html/admin/calendario.php on line 6
+[28-Jun-2025 16:35:27 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'data' in 'order clause' in /home3/rachobellevue/public_html/admin/calendario.php:6
+Stack trace:
+#0 /home3/rachobellevue/public_html/admin/calendario.php(6): mysqli->query('SELECT * FROM d...')
+#1 {main}
+  thrown in /home3/rachobellevue/public_html/admin/calendario.php on line 6
+[28-Jun-2025 16:36:05 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'data' in 'order clause' in /home3/rachobellevue/public_html/admin/calendario.php:6
+Stack trace:
+#0 /home3/rachobellevue/public_html/admin/calendario.php(6): mysqli->query('SELECT * FROM d...')
+#1 {main}
+  thrown in /home3/rachobellevue/public_html/admin/calendario.php on line 6
+[28-Jun-2025 16:36:06 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'data' in 'order clause' in /home3/rachobellevue/public_html/admin/calendario.php:6
+Stack trace:
+#0 /home3/rachobellevue/public_html/admin/calendario.php(6): mysqli->query('SELECT * FROM d...')
+#1 {main}
+  thrown in /home3/rachobellevue/public_html/admin/calendario.php on line 6
+[28-Jun-2025 16:37:42 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'data' in 'order clause' in /home3/rachobellevue/public_html/admin/calendario.php:6
+Stack trace:
+#0 /home3/rachobellevue/public_html/admin/calendario.php(6): mysqli->query('SELECT * FROM d...')
+#1 {main}
+  thrown in /home3/rachobellevue/public_html/admin/calendario.php on line 6
+[28-Jun-2025 16:37:57 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'data' in 'order clause' in /home3/rachobellevue/public_html/admin/calendario.php:6
+Stack trace:
+#0 /home3/rachobellevue/public_html/admin/calendario.php(6): mysqli->query('SELECT * FROM d...')
+#1 {main}
+  thrown in /home3/rachobellevue/public_html/admin/calendario.php on line 6
+[28-Jun-2025 16:38:02 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'data' in 'order clause' in /home3/rachobellevue/public_html/admin/calendario.php:6
+Stack trace:
+#0 /home3/rachobellevue/public_html/admin/calendario.php(6): mysqli->query('SELECT * FROM d...')
+#1 {main}
+  thrown in /home3/rachobellevue/public_html/admin/calendario.php on line 6
+[28-Jun-2025 16:43:50 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'data' in 'order clause' in /home3/rachobellevue/public_html/admin/calendario.php:6
+Stack trace:
+#0 /home3/rachobellevue/public_html/admin/calendario.php(6): mysqli->query('SELECT * FROM d...')
+#1 {main}
+  thrown in /home3/rachobellevue/public_html/admin/calendario.php on line 6
+[28-Jun-2025 16:43:57 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'data' in 'order clause' in /home3/rachobellevue/public_html/admin/calendario.php:6
+Stack trace:
+#0 /home3/rachobellevue/public_html/admin/calendario.php(6): mysqli->query('SELECT * FROM d...')
+#1 {main}
+  thrown in /home3/rachobellevue/public_html/admin/calendario.php on line 6
+[28-Jun-2025 16:44:07 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'data' in 'order clause' in /home3/rachobellevue/public_html/admin/calendario.php:6
+Stack trace:
+#0 /home3/rachobellevue/public_html/admin/calendario.php(6): mysqli->query('SELECT * FROM d...')
+#1 {main}
+  thrown in /home3/rachobellevue/public_html/admin/calendario.php on line 6
+[28-Jun-2025 16:44:12 America/Fortaleza] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'data' in 'order clause' in /home3/rachobellevue/public_html/admin/calendario.php:6
+Stack trace:
+#0 /home3/rachobellevue/public_html/admin/calendario.php(6): mysqli->query('SELECT * FROM d...')
+#1 {main}
+  thrown in /home3/rachobellevue/public_html/admin/calendario.php on line 6

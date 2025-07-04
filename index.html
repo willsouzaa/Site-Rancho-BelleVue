@@ -19,6 +19,133 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
+ <!-- FullCalendar CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/fullcalendar/index.global.min.css" rel="stylesheet" />
+
+  <!-- FullCalendar JS -->
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar/index.global.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/locales-all.min.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const calendarEl = document.getElementById('calendar');
+      const calendar = new FullCalendar.Calendar(calendarEl, {
+        initialView: 'dayGridMonth',
+        locale: 'pt-br',
+        eventColor: '#e74c3c',
+        headerToolbar: {
+          left: 'prev,next today',
+          center: 'title',
+          right: ''
+        },
+        events: 'https://ranchobellevue.com.br/publico/get_datas.php'
+      });
+      calendar.render();
+    });
+  </script>
+  <style>
+  /* Container do calendário */
+  #calendar {
+    max-width: 800px;
+    margin: 40px auto;
+    background: #2f3328;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: #ffffff;
+    transition: all 0.3s ease;
+    border: 1px solid #414b32;
+  }
+
+  #calendar:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+  }
+
+  /* Título (mês/semana/dia) */
+  #calendar .fc-toolbar-title {
+    font-size: 22px;
+    font-weight: 600;
+    color: #ffffff;
+  }
+
+  /* Botões */
+  .fc-button {
+    background-color: #414b32 !important;
+    border: none !important;
+    color: #ffffff !important;
+    border-radius: 6px !important;
+    padding: 6px 12px !important;
+    font-weight: 500;
+  }
+
+  .fc-button:hover {
+    background-color: #5a6940 !important;
+  }
+
+  .fc-button-primary:not(:disabled):active {
+    background-color: #6f8050 !important;
+  }
+
+  /* Cabeçalho dos dias da semana */
+  .fc-col-header-cell-cushion {
+    color: #ffffff;
+    font-weight: 600;
+  }
+
+  .fc-scrollgrid {
+    border: none !important;
+    background-color: #2b2f26;
+  }
+
+  /* Células dos dias */
+  .fc .fc-daygrid-day {
+    background-color: #2f3328;
+    border: 1px solid #414b32;
+  }
+
+  .fc-daygrid-day-number {
+    color: #ffffff;
+    font-weight: 500;
+    padding: 4px;
+  }
+
+  /* Destaque para o dia de hoje */
+  .fc-day-today {
+    background-color: #3d452f !important;
+  }
+
+  /* Estilo dos eventos */
+  .fc-daygrid-event {
+    background-color: #556b3b;
+    color: #ffffff;
+    border: 1px solid #7a9954;
+    border-radius: 6px;
+    padding: 2px 4px;
+    font-size: 13px;
+    margin: 2px 0;
+  }
+
+  /* Responsivo */
+  @media (max-width: 600px) {
+    #calendar {
+      padding: 15px;
+      font-size: 13px;
+    }
+
+    .fc-toolbar-title {
+      font-size: 18px;
+    }
+
+    .fc-button {
+      padding: 5px 10px !important;
+      font-size: 13px;
+    }
+  }
+</style>
+
 </head>
 <body>
 <!-- Navbar -->
@@ -99,7 +226,7 @@
 
 
 <!-- Comodidades -->
-<section id="comodidades" class="py-5" style="background-color: #f8f9fa;">
+<section id="comodidades" class="py-1" style="background-color: #f8f9fa;">
     <div class="container text-center">
         <h2 class="mb-4">
             Uma cabana exclusiva com uma vista deslumbrante para o nascer do&nbsp;sol
@@ -111,12 +238,46 @@
                     <i class="fas fa-map-marker-alt"></i> Litoral, Santa Catarina. Brasil
                 </strong>
             </p>
-            
         </p>
     </div>
 </section>
 
+<section id="precos" class="py-2" style="background-color: #f8f9fa;">
+    <div class="container">
+        <h2 class="text-center mb-5" style="color: #6c7b58; font-weight: 600;">Preços e Condições</h2>
 
+        <div class="row">
+            <!-- Card: Dia de Semana -->
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-lg border-0 h-100" style="border-radius: 20px; overflow: hidden; background-color: #fff;">
+                    <div class="card-body">
+                        <h5 class="card-title d-flex align-items-center" style="color: #6c7b58;">
+                            <i class="bi bi-calendar-week me-2"></i> De domingo á quinta
+                        </h5>
+                        <p><strong>R$790,00</strong><br> - Diária p/ 2 pessoas</p>
+                        <a href="https://wa.me/48996777239?text=Olá,%20estou%20interessado%20em%20uma%20hospedagem.%20Poderia%20me%20passar%20mais%20informações?" class="btn btn-success w-100">RESERVAR AGORA</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card: Final de Semana -->
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-lg border-0 h-100" style="border-radius: 20px; overflow: hidden; background-color: #fff;">
+                    <div class="card-body">
+                        <h5 class="card-title d-flex align-items-center" style="color: #6c7b58;">
+                            <i class="bi bi-calendar-week me-2"></i> Sexta e sábado
+                        </h5>
+                        <p><strong>R$890,00</strong><br> - Diária p/ 2 pessoas</p>
+                        <a href="https://wa.me/48996777239?text=Olá,%20estou%20interessado%20em%20uma%20hospedagem.%20Poderia%20me%20passar%20mais%20informações?" class="btn btn-success w-100">RESERVAR AGORA</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <h2 class="text-center mb-5" style="color: #6c7b58; font-weight: 600;">Calendário de Disponibilidade</h2>
+  <div id="calendar"></div>
 
 <div id="carouselComodidades" class="carousel slide mb-5">
     <div class="carousel-inner">
@@ -159,6 +320,62 @@
     </div>
 </div>
 
+<section id="experiencias-premium" class="py-5" style="background-color: #f8f9fa;">
+    <div class="container">
+        <div class="row align-items-center">
+            <!-- Foto à esquerda -->
+            <div class="col-md-6 mb-4 mb-md-0">
+                <img src="./imagem/premium.JPG" class="img-fluid rounded shadow-lg" alt="Experiências Premium">
+            </div>
+
+            <!-- Texto à direita -->
+<div class="col-md-6">
+    <h2 class="mb-4" style="color: #6c7b58; font-weight: 600;">Experiência alto padrão</h2>
+    <p class="lead mb-4" style="color: #6c757d;">Além dos serviços já inclusos na hospedagem, oferecemos opções adicionais para tornar sua estadia ainda mais especial e personalizada.</p>
+
+    <ul class="list-unstyled" style="color: #030303;">
+        <li class="d-flex align-items-center mb-3">
+            <i class="bi bi-cup-straw fs-3 me-3" style="color: #4a5a35;"></i>
+            <strong>Box de café da manhã</strong>
+        </li>
+        <li class="d-flex align-items-center mb-3">
+            <i class="bi bi-person-check fs-3 me-3" style="color: #4a5a35;"></i>
+            <strong>Tábua de frios</strong>
+        </li>
+        <li class="d-flex align-items-center mb-3">
+            <i class="bi bi-gift fs-3 me-3" style="color: #4a5a35;"></i>
+            <strong>Pedido de casamento</strong>
+        </li>
+        <li class="d-flex align-items-center mb-3">
+            <i class="bi bi-heart fs-3 me-3" style="color: #4a5a35;"></i>
+            <strong>Estadia romântica</strong>
+        </li>
+        <li class="d-flex align-items-center mb-3">
+            <i class="bi bi-cup fs-3 me-3" style="color: #4a5a35;"></i>
+            <strong>Fondue doce</strong>
+        </li>
+        <li class="d-flex align-items-center mb-3">
+            <i class="bi bi-person-bounding-box fs-3 me-3" style="color: #4a5a35;"></i>
+            <strong>Passeio à cavalo</strong>
+        </li>
+        <li class="d-flex align-items-center mb-3">
+            <i class="bi bi-balloon fs-3 me-3" style="color: #4a5a35;"></i>
+            <strong>Balonismo</strong>
+        </li>
+        <li class="d-flex align-items-center mb-3">
+            <i class="bi bi-airplane-engines fs-3 me-3" style="color: #4a5a35;"></i>
+            <strong>Parapente</strong>
+        </li>
+        <li class="d-flex align-items-center mb-3">
+            <i class="bi bi-tree fs-3 me-3" style="color: #4a5a35;"></i>
+            <strong>Arvorismo</strong>
+        </li>
+    </ul>
+
+    <p class="mt-4" style="color: #6c757d;"><strong>* Consulte os valores das experiências com nossos parceiros no momento do agendamento.</strong></p>
+    <p style="color: #6c757d;"><strong>* Alguns serviços precisam de agendamento com no mínimo 7 dias de antecedência.</strong></p>
+</div>
+</section>
 
 <section id="comodidades" class="py-5" style="background-color: rgba(133, 146, 125, 0.1);">
     <div class="container text-center">
@@ -239,62 +456,6 @@
         </div>
     </div>
 </section>
-<section id="experiencias-premium" class="py-5" style="background-color: #f8f9fa;">
-    <div class="container">
-        <div class="row align-items-center">
-            <!-- Foto à esquerda -->
-            <div class="col-md-6 mb-4 mb-md-0">
-                <img src="./imagem/premium.JPG" class="img-fluid rounded shadow-lg" alt="Experiências Premium">
-            </div>
-
-            <!-- Texto à direita -->
-<div class="col-md-6">
-    <h2 class="mb-4" style="color: #6c7b58; font-weight: 600;">Experiência alto padrão</h2>
-    <p class="lead mb-4" style="color: #6c757d;">Além dos serviços já inclusos na hospedagem, oferecemos opções adicionais para tornar sua estadia ainda mais especial e personalizada.</p>
-
-    <ul class="list-unstyled" style="color: #030303;">
-        <li class="d-flex align-items-center mb-3">
-            <i class="bi bi-cup-straw fs-3 me-3" style="color: #4a5a35;"></i>
-            <strong>Box de café da manhã</strong>
-        </li>
-        <li class="d-flex align-items-center mb-3">
-            <i class="bi bi-person-check fs-3 me-3" style="color: #4a5a35;"></i>
-            <strong>Tábua de frios</strong>
-        </li>
-        <li class="d-flex align-items-center mb-3">
-            <i class="bi bi-gift fs-3 me-3" style="color: #4a5a35;"></i>
-            <strong>Pedido de casamento</strong>
-        </li>
-        <li class="d-flex align-items-center mb-3">
-            <i class="bi bi-heart fs-3 me-3" style="color: #4a5a35;"></i>
-            <strong>Estadia romântica</strong>
-        </li>
-        <li class="d-flex align-items-center mb-3">
-            <i class="bi bi-cup fs-3 me-3" style="color: #4a5a35;"></i>
-            <strong>Fondue doce</strong>
-        </li>
-        <li class="d-flex align-items-center mb-3">
-            <i class="bi bi-person-bounding-box fs-3 me-3" style="color: #4a5a35;"></i>
-            <strong>Passeio à cavalo</strong>
-        </li>
-        <li class="d-flex align-items-center mb-3">
-            <i class="bi bi-balloon fs-3 me-3" style="color: #4a5a35;"></i>
-            <strong>Balonismo</strong>
-        </li>
-        <li class="d-flex align-items-center mb-3">
-            <i class="bi bi-airplane-engines fs-3 me-3" style="color: #4a5a35;"></i>
-            <strong>Parapente</strong>
-        </li>
-        <li class="d-flex align-items-center mb-3">
-            <i class="bi bi-tree fs-3 me-3" style="color: #4a5a35;"></i>
-            <strong>Arvorismo</strong>
-        </li>
-    </ul>
-
-    <p class="mt-4" style="color: #6c757d;"><strong>* Consulte os valores das experiências com nossos parceiros no momento do agendamento.</strong></p>
-    <p style="color: #6c757d;"><strong>* Alguns serviços precisam de agendamento com no mínimo 7 dias de antecedência.</strong></p>
-</div>
-</section>
 
 <section id="descubra" class="py-5" style="background-color: rgba(133, 146, 125, 0.1);">
     <div class="container">
@@ -344,41 +505,6 @@
             <a href="https://maps.app.goo.gl/qaoV6AYGBLFRWCWS7" class="btn btn-primary" style="background-color: #6c7b58; border-color: #6c7b58;">
                 Ver Avaliações
             </a>
-        </div>
-    </div>
-</section>
-
-        
-<section id="precos" class="py-5" style="background-color: #f8f9fa;">
-    <div class="container">
-        <h2 class="text-center mb-5" style="color: #6c7b58; font-weight: 600;">Preços e Condições</h2>
-
-        <div class="row">
-            <!-- Card: Dia de Semana -->
-            <div class="col-md-4 mb-4">
-                <div class="card shadow-lg border-0 h-100" style="border-radius: 20px; overflow: hidden; background-color: #fff;">
-                    <div class="card-body">
-                        <h5 class="card-title d-flex align-items-center" style="color: #6c7b58;">
-                            <i class="bi bi-calendar-week me-2"></i> De domingo á quinta
-                        </h5>
-                        <p><strong>R$790,00</strong><br> - Diária p/ 2 pessoas</p>
-                        <a href="https://wa.me/48996777239?text=Olá,%20estou%20interessado%20em%20uma%20hospedagem.%20Poderia%20me%20passar%20mais%20informações?" class="btn btn-success w-100">RESERVAR AGORA</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card: Final de Semana -->
-            <div class="col-md-4 mb-4">
-                <div class="card shadow-lg border-0 h-100" style="border-radius: 20px; overflow: hidden; background-color: #fff;">
-                    <div class="card-body">
-                        <h5 class="card-title d-flex align-items-center" style="color: #6c7b58;">
-                            <i class="bi bi-calendar-week me-2"></i> Sexta e sábado
-                        </h5>
-                        <p><strong>R$890,00</strong><br> - Diária p/ 2 pessoas</p>
-                        <a href="https://wa.me/48996777239?text=Olá,%20estou%20interessado%20em%20uma%20hospedagem.%20Poderia%20me%20passar%20mais%20informações?" class="btn btn-success w-100">RESERVAR AGORA</a>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
 </section>
@@ -659,3 +785,5 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </footer>
+
+</body>

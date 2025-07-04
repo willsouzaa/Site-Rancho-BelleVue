@@ -147,6 +147,7 @@ body {
     .carousel-control-prev,
     .carousel-control-next {
         opacity: 0.0;  /* Transparência também em telas menores */
+        padding: 8px 80px; 
     }
 }
 
@@ -598,3 +599,104 @@ footer iframe {
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
+
+
+  /* Container do calendário */
+  #calendar {
+    max-width: 800px;
+    margin: 40px auto;
+    background: #2f3328;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: #e6e6e6;
+    transition: all 0.3s ease;
+    border: 1px solid #414b32;
+  }
+
+  #calendar:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+  }
+
+  /* Título (mês/semana/dia) */
+  #calendar .fc-toolbar-title {
+    font-size: 22px;
+    font-weight: 600;
+    color: #ffffff;
+  }
+
+  /* Botões */
+  .fc-button {
+    background-color: #414b32 !important;
+    border: none !important;
+    color: #ffffff !important;
+    border-radius: 6px !important;
+    padding: 6px 12px !important;
+    font-weight: 500;
+  }
+
+  .fc-button:hover {
+    background-color: #5a6940 !important;
+  }
+
+  .fc-button-primary:not(:disabled):active {
+    background-color: #6f8050 !important;
+  }
+
+  /* Cabeçalho dos dias da semana */
+  .fc-col-header-cell-cushion {
+    color: #ffffff;
+    font-weight: 600;
+  }
+
+  .fc-scrollgrid {
+    border: none !important;
+    background-color: #2b2f26;
+  }
+
+  /* Células dos dias */
+  .fc .fc-daygrid-day {
+    background-color: #2f3328;
+    border: 1px solid #414b32;
+  }
+
+  .fc-daygrid-day-number {
+    color: #ffffff;
+    font-weight: 500;
+    padding: 4px;
+  }
+
+  /* Destaque para o dia de hoje */
+  .fc-day-today {
+    background-color: #3d452f !important;
+  }
+
+  /* Estilo dos eventos */
+  .fc-daygrid-event {
+    background-color: #556b3b;
+    color: #f1f9ee;
+    border: 1px solid #7a9954;
+    border-radius: 6px;
+    padding: 2px 4px;
+    font-size: 13px;
+    margin: 2px 0;
+  }
+
+  /* Responsivo */
+  @media (max-width: 600px) {
+    #calendar {
+      padding: 15px;
+      font-size: 13px;
+    }
+
+    .fc-toolbar-title {
+      font-size: 18px;
+    }
+
+    .fc-button {
+      padding: 5px 10px !important;
+      font-size: 13px;
+    }
+  }
